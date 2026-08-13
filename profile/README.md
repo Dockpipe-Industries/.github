@@ -13,6 +13,29 @@
 
 ---
 
+## Our first foundation: DockPipe
+
+[DockPipe](https://github.com/Dockpipe-Industries/dockpipe) is the foundational open-source platform developed by DockPipe Industries.
+
+It began with a simple premise: a command should be able to run in a clean, disposable environment without forcing its author to hand-build the surrounding machinery. From that primitive, DockPipe grows into a governed runtime for reusable workflows, packages, CI jobs, AI workers, and deployable tooling.
+
+DockPipe reflects the company principles in working software:
+
+- **one clear execution primitive;**
+- **isolation by default;**
+- **composable workflows and packages;**
+- **separation between intent, environment, tooling, and lifecycle;**
+- **explicit verification and authority boundaries;**
+- **open-source foundations that can be inspected and extended.**
+
+<p align="center">
+  <a href="https://github.com/Dockpipe-Industries/dockpipe"><strong>Explore DockPipe -></strong></a>
+  &nbsp;&middot;&nbsp;
+  <a href="https://github.com/Dockpipe-Industries/dockpipe/blob/master/docs/README.md"><strong>Read the documentation -></strong></a>
+  &nbsp;&middot;&nbsp;
+  <a href="https://github.com/Dockpipe-Industries/dockpipe/releases"><strong>View releases -></strong></a>
+</p>
+
 ## Our purpose
 
 DockPipe Industries is a long-horizon engineering company focused on the infrastructure behind complex work.
@@ -77,29 +100,6 @@ DockPipe Industries develops foundational technology across a set of connected h
 | **Industrial-scale systems** | Applying the same principles of isolation, observability, resilience, and controlled flow to increasingly complex operations. |
 
 These are our direction of travel—not a claim that every layer is already a finished product. We prefer to build the primitive, prove it under real use, and expand from evidence.
-
-## Our first foundation: DockPipe
-
-[DockPipe](https://github.com/Dockpipe-Industries/dockpipe) is the foundational open-source platform developed by DockPipe Industries.
-
-It began with a simple premise: a command should be able to run in a clean, disposable environment without forcing its author to hand-build the surrounding machinery. From that primitive, DockPipe grows into a governed runtime for reusable workflows, packages, CI jobs, AI workers, and deployable tooling.
-
-DockPipe reflects the company principles in working software:
-
-- **one clear execution primitive;**
-- **isolation by default;**
-- **composable workflows and packages;**
-- **separation between intent, environment, tooling, and lifecycle;**
-- **explicit verification and authority boundaries;**
-- **open-source foundations that can be inspected and extended.**
-
-<p align="center">
-  <a href="https://github.com/Dockpipe-Industries/dockpipe"><strong>Explore DockPipe -></strong></a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://github.com/Dockpipe-Industries/dockpipe/blob/master/docs/README.md"><strong>Read the documentation -></strong></a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://github.com/Dockpipe-Industries/dockpipe/releases"><strong>View releases -></strong></a>
-</p>
 
 ## How we work
 
