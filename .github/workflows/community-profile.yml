@@ -1,0 +1,38 @@
+name: Community profile
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  profile:
+    name: Community profile
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify published profile inputs
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          profile = Path('profile/README.md')
+          if profile.stat().st_size > 128 * 1024:
+              raise SystemExit('Organization profile exceeds the 128 KiB text limit')
+          text = profile.read_text(encoding='utf-8')
+          if not text.strip() or '\x00' in text:
+              raise SystemExit('Organization profile must contain nonempty UTF-8 text')
+          avatar = Path('profile/assets/dockpipe-industries-avatar.png')
+          with avatar.open('rb') as stream:
+              if stream.read(8) != b'\x89PNG\r\n\x1a\n':
+                  raise SystemExit('Organization avatar must have a PNG signature')
+          if './assets/dockpipe-industries-avatar.png' not in text:
+              raise SystemExit('Organization profile must reference its local avatar')
+          print('Organization profile text and local avatar inputs verified')
+          PY
